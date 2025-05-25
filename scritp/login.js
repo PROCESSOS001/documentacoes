@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const usuario = document.getElementById("username").value;
       const senha = document.getElementById("password").value;
 
-      const usuarioCorreto = "1";
-      const senhaCorreta = "1";
+      const usuarioCorreto = "admin";
+      const senhaCorreta = "12345";
 
       if (usuario === usuarioCorreto && senha === senhaCorreta) {
         window.location.href = "frontpage.html";
