@@ -1,0 +1,47 @@
+.container-center {
+  display: grid;
+  /* place-items: center; */
+  height: 100vh;
+}
+
+.container-login {
+  background: var(--c0);
+  /* border: var(--p3) 1px solid; */
+  padding: 40px;
+  /* border-radius: 12px; */
+  width: 600px;
+  box-sizing: border-box;
+  place-content: center;
+}
+
+.imagem-login {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.fundo-login {
+  background-image: url(../imgs/fundoLogin.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0;
+  height: 100vh;
+  margin: 0;
+}
+
+.legenda-login{
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 200;
+  color: var(--c10);
+  text-align: center;
+}
+
+.vertice{
+  display: grid;
+  height: 100%;
+  width: 10px;
+  position: absolute;
+  top: 0;
+  left: 600px;
+}
