@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../Style/global.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <title>Pagina inicial</title>
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <a href="../frontpage.html"><img class="logo-branca" src="../imgs/logo-branca.png" alt=""></a>
+
+      <button type="submit" class="botao sair" id="btnSair">Sair
+        <span class="material-icons iconButton">exit_to_app</span>
+      </button>
+
+    </div>
+  </header>
+
+  <div class="conteudo-pagina">
+    <h2 class="titulo">Emissão de etiquetas dos Correios e envio de brindes.</h2>
+
+    <div class="separacao-layout">
+
+      <div class="document-layout">
+        <h1 class="box">Introdução</h1>
+
+        <p>Este documento tem como objetivo apresentar o fluxo atual do processo para envio de Brindes. Essa abordagem permitirá alinhar a visão do processo operacional necessário para a realização da demanda.
+        </p>
+
+        <h1 class="box">1 - Início do Processo</h1>
+
+        <ul class="boxp">
+          <li class="boxp">Recebemos a demanda via e-mail:</li>
+        </ul>
+
+        <img class="print" src="../imgprocesso/emissaoetiquetas/image3.png" alt="Clique para expandir" onclick="expandirImagem(this)">
+
+        <div id="overlay" onclick="fecharImagem()">
+          <img id="imagem-expandida">
+        </div>
+
+        <h1 class="box">2 - Fazemos a checagem das seguintes informações que constam no e-mail:</h1>
+
+        <ul class="boxp">
+          <li class="boxp">Impressão da carta em anexo para enviar junto com o brinde;
+          </li>
+          <li class="boxp">Material que será separado / Quantidade
+          </li>
+          <li class="boxp">E as informações para enviar ao destinatário.
+          </li>
+        </ul>
+
+        <h1 class="box">3 - Envio de informações para a área Fiscal seguir com a emissão das Notas Fiscais:
+        </h1>
+        <img class="print" src="../imgprocesso/emissaoetiquetas/image5.png" alt="">
+        <ul class="boxp">
+          <li class="boxp">Material a ser faturado.
+          </li>
+          <li class="boxp">Quantidade.
+          </li>
+          <li class="boxp">Destinatário e alguma outra observação caso necessário.
+          </li>
+        </ul>
+
+        <h1 class="box">4 - Validação na operação:
+        </h1>
+        <ul class="boxp">
+          <li class="boxp">Ir até o endereço onde estarão alocados os materiais que precisam ser separados;
+          </li>
+          <li class="boxp">Separar o material e conferir a quantidade;
+          </li>
+          <li class="boxp">Montar as caixas para embalar o material;
+          </li>
+          <li class="boxp">Levar até a mesa do setor de expedição;
+          </li>
+          <li class="boxp">Pegar as medidas da caixa (altura x largura x comprimento) e o peso.
+          </li>
+        </ul>
+
+        <h1 class="box">5 - Parte 1 para impressão da etiqueta dos Correios:
+        </h1>
+        <ul class="boxp">
+          <li class="boxp">Fiscal irá retornar com a Nota Fiscal e o Arquivo XML via e-mail;
+          </li>
+          <li class="boxp">Seguimos o download do arquivo XML;
+          </li>
+          <li class="boxp">Ao retornar da operação com as informações da caixa (altura x largura x comprimento), o peso e baixar o arquivo XML, realizamos a emissão da etiqueta dos correios;
+          </li>
+          <li class="boxp">Primeiro passo é acessar a pasta GOODWE e em seguida CONTROLES;
+          </li>
+        </ul>
+
+        <img class="print" src="../imgprocesso/emissaoetiquetas/image4.png" alt="">
+
+        <ul class="boxp">
+          <li class="boxp">O Proximo passo é abrir o arquivo Excel - IMPORT ETIQUETAS 1.3v;</li>
+        </ul>
+
+        <img class="print" src="../imgprocesso/emissaoetiquetas/image7.png" alt="">
+
+        <ul class="boxp">
+          <li class="boxp">Ao abrir o arquivo excel, faça o comando ALT + F8 e execute o arquivo XML que foi salvo no processo anterior.</li>
+        </ul>
+
+        <img class="print" src="../imgprocesso/emissaoetiquetas/image6.png" alt="">
+
+        <ul class="boxp">
+          <li class="boxp">Ao aparecer as informações do destinário, pode fechar a planilha pois o arquivo é salvo automaticamente.</li>
+        </ul>
+
+        <img class="print" src="../imgprocesso/emissaoetiquetas/image9.png" alt="">
+
+        <h1 class="box">6 - Parte 2 para impressão da etiqueta dos Correios:
+        </h1>
+        <ul class="boxp">
+          <li class="boxp">Acesse o site para emissão da etiqueta dos correios: <a href="https://vipp.visualset.com.br/vipp/inicio/index.php">ViPP - Visual Pré-Postagem</a>
+          </li>
+          <li class="boxp">Efetue o login;
+          </li>
+        </ul>
+
+        <img class="print" src="../imgprocesso/emissaoetiquetas/image8.png" alt="">
+
+        <ul class="boxp">
+          <li class="boxp">Acesse Criar Postagens
+          </li>
+        </ul>
+
+        <img class="print" src="../imgprocesso/emissaoetiquetas/image11.png" alt="">
+
+        <ul class="boxp">
+          <li class="boxp">Em seguida selecione SEDEX e vá na aba Dimensões Adicionais para cadastrar a (altura x largura x comprimento x peso) do pacote.
+          </li>
+        </ul>
+
+        <img class="print" src="../imgprocesso/emissaoetiquetas/image10.png" alt="">
+
+        <ul class="boxp">
+          <li class="boxp">Cadastre os seguintes campos: (altura x largura x comprimento x peso) e selecione a opção Aplicar em todos;
+          </li>
+        </ul>
+
+        <img class="print" src="../imgprocesso/emissaoetiquetas/image14.png" alt="">
+
+        <ul class="boxp">
+          <li class="boxp">Em seguida selecione Carregar e adicione o Excel IMPORT ETIQUETAS 1.3v onde salvou as informações do destinatário; e ao aparecer as informações Fleg e Gere uma Pré-Postagem;
+          </li>
+        </ul>
+        <img class="print" src="../imgprocesso/emissaoetiquetas/image12.png" alt="">
+
+        <ul class="boxp">
+          <li class="boxp">Ao aparecer as informações Confira as informações, flegue o quadrado em branco e Gere uma Pré-Postagem;
+          </li>
+        </ul>
+
+        <img class="print" src="../imgprocesso/emissaoetiquetas/image13.png" alt="">
+
+        <ul class="boxp">
+          <li class="boxp">Posteriormente será exibido a mensagem abaixo.
+          </li>
+        </ul>
+
+        <img class="print" src="../imgprocesso/emissaoetiquetas/image15.png" alt="">
+
+        <ul class="boxp">
+          <li class="boxp">Após confirmação a tela será exibida desta forma e a etiqueta está pronta para ser impressa ao clicar na impressora na aba registro.
+          </li>
+        </ul>
+
+        <img class="print" src="../imgprocesso/emissaoetiquetas/image16.png" alt="">
+
+        <ul class="boxp">
+          <li class="boxp">A etiqueta estará nesse formato, salve o arquivo.
+          </li>
+        </ul>
+
+        <img class="print" src="../imgprocesso/emissaoetiquetas/image17.png" alt="">
+
+
+        <h1 class="box">7 - Envio de informações para operação:
+        </h1>
+
+        <ul class="boxp">
+          <li class="boxp">Com a Nota Fiscal e Etiquta dos correios salvos, faça o envio de ambas via e-mail para o operador logístico seguir a finalização do processo enviando o pedido.
+          </li>
+
+        </ul>
+        <img class="print" src="../imgprocesso/emissaoetiquetas/image18.png" alt="">
+
+      </div>
+    </div>
+  </div>
+
+  <div class="botoes-fixos">
+  <button onclick="history.back()">Voltar</button>
+  <a href="../documentos/Processo de envio de Brindes e emissão da Etiqueta dos Correios.docx" download>
+    <button>Baixar Documentação</button>
+  </a>
+</div>
+</body>
+
+<script src="../scritp/login.js"></script>
+
+</html>

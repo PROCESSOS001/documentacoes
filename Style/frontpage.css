@@ -1,0 +1,127 @@
+header {
+  background-color: var(--c11);
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 10px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.logo-branca {
+  width: 100px;
+  height: auto;
+}
+
+.sair {
+  margin-top: 9px;
+}
+
+.conteudo {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.conteudo-pagina {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 100px;
+}
+
+.titulo {
+  color: var(--c9);
+  margin: 40px 0 40px 0;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.img-doc {
+  border-radius: 10px;
+  width: 350px;
+  height: 210px;
+  object-fit: cover;
+}
+
+.separacao {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.legenda {
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+.document {
+  background: var(--c0);
+  color: var(--c9);
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.096);
+  border: 1px solid var(--c3);
+}
+
+.botao-a {
+  background-color: var(--p1);
+  color: var(--c0);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.8em;
+  padding: 0 1em;
+  letter-spacing: 1px;
+  overflow: hidden;
+  position: relative;
+}
+
+.botao-a:active {
+  transform: translate(0.05em, 0.05em);
+}
+
+.botoes-fixos {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  margin-left: -20px;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.botoes-fixos button {
+  background-color: var(--p1);
+  /* margin-top: 20px; */
+  color: var(--c0);
+  font-family: inherit;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  letter-spacing: 1.5px;
+}
+
+.botoes-fixos button:hover {
+  background-color: #c94612;
+}
+.botao-fixos:active {
+  transform: translate(0.05em, 0.05em);
+}
