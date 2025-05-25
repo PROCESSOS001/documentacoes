@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (btnSair) {
     btnSair.addEventListener("click", () => {
-      window.location.href = "../index.html";
+      window.location.href = "https://processos001.github.io/documentacoes/";
     });
   }
 
